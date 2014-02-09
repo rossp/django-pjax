@@ -84,7 +84,7 @@ If the content in your ``template-pjax.html`` file is very similar to your
 
     from djpjax import pjaxtend
     
-    @pjaxtend
+    @pjaxtend()
     def my_view(request):
         return TemplateResponse(request, "template.html", {'my': 'context'})
 
